@@ -1,6 +1,15 @@
 {
+  "//": [
+    "Discussion on how to write comments in package.json:",
+    "https://stackoverflow.com/questions/14221579/how-do-i-add-comments-to-package-json-for-npm-install"
+  ],
   "name": "@uraitakahito/hello-conditional-exports",
   "version": "1.0.0",
+  "//exports": {
+    "//": [
+      "https://nodejs.org/api/packages.html#exports"
+    ]
+  },
   "exports": {
     ".": "./index.js",
     "./lib": "./lib/index.js"
