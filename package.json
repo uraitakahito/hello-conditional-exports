@@ -1,6 +1,10 @@
 {
   "name": "@uraitakahito/hello-conditional-exports",
   "version": "1.0.0",
+  "exports": {
+    ".": "./index.js",
+    "./lib": "./lib/index.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
