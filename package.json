@@ -1,0 +1,31 @@
+{
+  "//": [
+    "Discussion on how to write comments in package.json:",
+    "https://stackoverflow.com/questions/14221579/how-do-i-add-comments-to-package-json-for-npm-install"
+  ],
+  "name": "@uraitakahito/hello-conditional-exports",
+  "version": "1.0.0",
+  "//exports": {
+    "//": [
+      "https://nodejs.org/api/packages.html#exports"
+    ]
+  },
+  "exports": {
+    ".": "./index.js",
+    "./lib": "./lib/index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uraitakahito/hello-conditional-exports.git"
+  },
+  "license": "Apache-2.0",
+  "description": "",
+  "publishConfig": {
+    "access": "public"
+  }
+}
