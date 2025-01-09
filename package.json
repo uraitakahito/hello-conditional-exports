@@ -4,16 +4,26 @@
     "https://stackoverflow.com/questions/14221579/how-do-i-add-comments-to-package-json-for-npm-install"
   ],
   "name": "@uraitakahito/hello-conditional-exports",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "//exports": {
     "//": [
-      "https://nodejs.org/api/packages.html#exports"
+      "https://nodejs.org/api/packages.html#exports",
+      "",
+      "> Within the `exports` object, key order is SIGINIFICANT. ",
+      "https://nodejs.org/api/packages.html#conditional-exports"
     ]
   },
   "exports": {
-    ".": "./index.js",
-    "./lib": "./lib/index.js"
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./lib": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
   },
+  "types": "./index.d.ts",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
