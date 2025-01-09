@@ -7,7 +7,10 @@
   "version": "1.0.0",
   "//exports": {
     "//": [
-      "https://nodejs.org/api/packages.html#exports"
+      "https://nodejs.org/api/packages.html#exports",
+      "",
+      "> Within the `exports` object, key order is SIGINIFICANT. ",
+      "https://nodejs.org/api/packages.html#conditional-exports"
     ]
   },
   "exports": {
